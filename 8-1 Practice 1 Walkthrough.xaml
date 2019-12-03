@@ -1,0 +1,165 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_8_1_Practice_1_Walkthrough" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,696" sap2010:WorkflowViewState.IdRef="_8_1_Practice_1_Walkthrough_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="_8_1_Practice_1_Walkthrough" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.1666666666667 300,107.166666666667 120,107.166666666667 120,143.666666666667</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">20,143.666666666667</av:Point>
+          <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Pick sap2010:Annotation.AnnotationText="Pick helps to do several processes in parallel that dont breakthe others, for example by this way it will findout the case to go forward" sap:VirtualizedContainerService.HintSize="1216,489.333333333333" sap2010:WorkflowViewState.IdRef="Pick_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <PickBranch sap:VirtualizedContainerService.HintSize="384.666666666667,414.666666666667" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+          <PickBranch.Trigger>
+            <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists 'explorer.exe Program'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAA8CAYAAABo3+Q5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARtSURBVHhe7drJTxRREMDhwQX3XVEURUVU3AD/OkVxRUXFBQ4aCMa7MfFIjPFAxPUAHCAwzABhIBzUEztcylfgMz01NczW1W+m5PBdx9T75XV3BUOTk5Pgh6WlpTUBW4tXwNbiFTCxeK1ff0Pl4yjrVBIVj3gnqYdROJHE8TiRf8obecc4DyJwlFFm0DldCo2NjUEsNs4GyQT94Sedv6C2ZRQuG7UtI1DTPALVxqXnI3DRuPBsxXnj3NMRqHo6DGefDMOZpmE4bVQapx6vqDBhMZqNUt4YNYccNQcaXT7QI/cjcNgovReBQ38dbIhAScMQHLg7BPvvDME+Y6+x5/YQ7L6FwrDL2HkzDDuM7TfCsM3YWh+GLfWDsPn6ik1G8bVB2GgUXR1ImNOl0IvWdnjz9h0bJBP0hzFeTTOGG1URbkNdHsb79v1HXLxPn7/Ay7ZXq3r/4WNcOER/eCVeqhs3XDDh1tcNsPG6urqgra3NiVBr++u4eBMTE4CP0tWMjyc+ZulQGK/axNJw4zDcOhOu6EpivPn5eZiZmXEiNBgOQzQaTYiRKToUxsNomsKFmHguiX1tYjyMpincfxUPg9l4q73jbLycwxm+hzNsOC5eLBaD3t5eJ0TjYTAtNy5ZvP7+fujo6HBCNB4GWy1cXt84JhwXzyXRJR2jablxFp3TJdElvcoE0xQO0TldEl3SMVpBhTO4YF50TrVLOkbTcuMsOqfaJR2jaQqH6JwuiX5tVppYmsIhOqdLovEwmI2XczjDxTuOonOqXdIrFN04i86pdklf/kt4Pt44Jkq66JwuiS7pGE3LjbPonC6JLune/1OiIRyic7okuqTnVTiDi5EpOqfaJR2jablxFp0zyCV9eno6juiSjtE0hUN0TmmLi4tJiX5tYjRN4RCdUwIXiiMaryzdcEa+vuMoOqefS3pPT09GRONhNC03zqJzql3SMVrgN445cD/RObPBPQKzIbqklyq6cRadMxNcgFyILunawiE6ZyrcoftFdEkPLJzBHbQEOqfaJR2jablxFp3Tu6TTJVqa6JJeoiwc8s7IPcqCJPq1idE0hUP5EM0SjYerQCEt4OmgB4hLOrdAB0E0HkbTcuMsGq+vr49doIMgGg+jaQqHaLygLCwsJBBd0rWFQ9zBSuKiWaJLurZwiDtgP3GRkhFd0gv944RDD1vtko7RtNw4i8abm5tjF+h0TU1NZU10ScdomsIhGi8b3CMwG6JfmxhNUzjExUgHd/i5Eo9X6O84ikZJtaR3d3eLEY2n6cZZNJ7aJV1bOETjWdxjTZpoPG3hkOtgXqLxtIVD3CG6IhovZTiDO6B8Rg/Q7yUd9zf6byQjGg+jablxFj3A2dnZhOU5F/T3KfzLvSUar1hZOMQdaBC80YKJpywc4g5WChfMSzSehnccxR2yn7hIyYjFazLxNN04iztwP3BxUvE1nncHaur8qS4c4g4+W1yQTPgWzxvOxtMWDnERMsFFyJZoPG3hEBckFe7gczcPfwB7kcBWDWsc3gAAAABJRU5ErkJggg==" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Desktop' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+          </PickBranch.Trigger>
+          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click 'list item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="e9917fdefcee702c1f66b40df825fc41" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Desktop' /&gt;&lt;wnd cls='ShellTabWindowClass' title='Desktop' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='2' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+        </PickBranch>
+        <PickBranch sap:VirtualizedContainerService.HintSize="384.666666666667,414.666666666667" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+          <PickBranch.Trigger>
+            <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists 'explorer.exe Program'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_2">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAA8CAYAAABo3+Q5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARtSURBVHhe7drJTxRREMDhwQX3XVEURUVU3AD/OkVxRUXFBQ4aCMa7MfFIjPFAxPUAHCAwzABhIBzUEztcylfgMz01NczW1W+m5PBdx9T75XV3BUOTk5Pgh6WlpTUBW4tXwNbiFTCxeK1ff0Pl4yjrVBIVj3gnqYdROJHE8TiRf8obecc4DyJwlFFm0DldCo2NjUEsNs4GyQT94Sedv6C2ZRQuG7UtI1DTPALVxqXnI3DRuPBsxXnj3NMRqHo6DGefDMOZpmE4bVQapx6vqDBhMZqNUt4YNYccNQcaXT7QI/cjcNgovReBQ38dbIhAScMQHLg7BPvvDME+Y6+x5/YQ7L6FwrDL2HkzDDuM7TfCsM3YWh+GLfWDsPn6ik1G8bVB2GgUXR1ImNOl0IvWdnjz9h0bJBP0hzFeTTOGG1URbkNdHsb79v1HXLxPn7/Ay7ZXq3r/4WNcOER/eCVeqhs3XDDh1tcNsPG6urqgra3NiVBr++u4eBMTE4CP0tWMjyc+ZulQGK/axNJw4zDcOhOu6EpivPn5eZiZmXEiNBgOQzQaTYiRKToUxsNomsKFmHguiX1tYjyMpincfxUPg9l4q73jbLycwxm+hzNsOC5eLBaD3t5eJ0TjYTAtNy5ZvP7+fujo6HBCNB4GWy1cXt84JhwXzyXRJR2jablxFp3TJdElvcoE0xQO0TldEl3SMVpBhTO4YF50TrVLOkbTcuMsOqfaJR2jaQqH6JwuiX5tVppYmsIhOqdLovEwmI2XczjDxTuOonOqXdIrFN04i86pdklf/kt4Pt44Jkq66JwuiS7pGE3LjbPonC6JLune/1OiIRyic7okuqTnVTiDi5EpOqfaJR2jablxFp0zyCV9eno6juiSjtE0hUN0TmmLi4tJiX5tYjRN4RCdUwIXiiMaryzdcEa+vuMoOqefS3pPT09GRONhNC03zqJzql3SMVrgN445cD/RObPBPQKzIbqklyq6cRadMxNcgFyILunawiE6ZyrcoftFdEkPLJzBHbQEOqfaJR2jablxFp3Tu6TTJVqa6JJeoiwc8s7IPcqCJPq1idE0hUP5EM0SjYerQCEt4OmgB4hLOrdAB0E0HkbTcuMsGq+vr49doIMgGg+jaQqHaLygLCwsJBBd0rWFQ9zBSuKiWaJLurZwiDtgP3GRkhFd0gv944RDD1vtko7RtNw4i8abm5tjF+h0TU1NZU10ScdomsIhGi8b3CMwG6JfmxhNUzjExUgHd/i5Eo9X6O84ikZJtaR3d3eLEY2n6cZZNJ7aJV1bOETjWdxjTZpoPG3hkOtgXqLxtIVD3CG6IhovZTiDO6B8Rg/Q7yUd9zf6byQjGg+jablxFj3A2dnZhOU5F/T3KfzLvSUar1hZOMQdaBC80YKJpywc4g5WChfMSzSehnccxR2yn7hIyYjFazLxNN04iztwP3BxUvE1nncHaur8qS4c4g4+W1yQTPgWzxvOxtMWDnERMsFFyJZoPG3hEBckFe7gczcPfwB7kcBWDWsc3gAAAABJRU5ErkJggg==" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Desktop' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+          </PickBranch.Trigger>
+          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click 'list item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="12b389c6b2393ac1dfb7a99c7d32605a" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Desktop' /&gt;&lt;wnd cls='ShellTabWindowClass' title='Desktop' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='2' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+        </PickBranch>
+        <PickBranch sap2010:Annotation.AnnotationText="The same changing dektop resolution... TODO in a VM" sap:VirtualizedContainerService.HintSize="232.666666666667,414.666666666667" sap2010:WorkflowViewState.IdRef="PickBranch_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </PickBranch>
+      </Pick>
+    </FlowStep>
+  </Flowchart>
+</Activity>
